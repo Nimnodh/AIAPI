@@ -56,3 +56,24 @@ class SingUpSerializer(serializers.ModelSerializer):
             password=validated_data['password'],
         )
         return user
+class ChangePasswordSerializer(serializers.Serializer):
+    old_password = serializers.CharField(required=True)
+    new_password = serializers.CharField(required=True)
+    confirm_password = serializers.CharField(required=True)
+
+    def validate(self, data):
+        """
+        Validate that the new passwords match.
+        """
+        if data['new_password'] != data['confirm_password']:
+            raise serializers.ValidationError("New passwords do not match.")
+        return data
+
+    def validate_old_password(self, value):
+        """
+        Validate that the old password is correct.
+        """
+        user = self.context['request'].user
+        if not user.check_password(value):
+            raise serializers.ValidationError("Old password is incorrect.")
+        return value
