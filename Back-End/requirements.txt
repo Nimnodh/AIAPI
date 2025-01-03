@@ -1,0 +1,15 @@
+Django==4.2.5              # Replace with the version you're using
+djangorestframework==3.14  # For APIs
+
+Pillow
+# Authentication and security
+django-cors-headers==3.14  # For handling CORS in APIs
+djangorestframework-simplejwt==5.2.0  # For JWT authentication
+djangorestframework-simplejwt
+
+setuptools
+
+# Additional dependencies (optional)
+django-environ==0.10.0     # For environment variables management
+
+requests==2.31.0           # If your app makes HTTP requests

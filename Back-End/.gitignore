@@ -1,0 +1,35 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media
+
+# Environments
+.env
+venv/
+ENV/
+env/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+# Test
+py_client/
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Migrations
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.py[cod]
+*/migrations/__pycache__/
+*/migrations/*.log
+*/migrations/*.pot
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.py[cod]
+*/migrations/__pycache__/
