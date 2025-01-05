@@ -12,7 +12,7 @@ const useMessageApi = (props:{ok:boolean}) => {
 
     setTimeout(() => {
       if (props.ok) {
-        messageApi.success("Success Login", 2.5);
+        messageApi.success("Success", 2.5);
       }
       else {
       message.error('Sameting went wrong try agen', 2.5);

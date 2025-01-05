@@ -166,7 +166,7 @@ export default function Login() {
             </div>
           </Row>
         ) : (
-          <div className="flex justify-center justify-items-center items-center h-screen ">
+          <div className="flex justify-center justify-items-center items-center  ">
             <Form
             disabled={loading}
               name="basic"

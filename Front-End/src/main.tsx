@@ -7,6 +7,7 @@ import store from './store/store.ts';
 import { Provider } from 'react-redux';
 import { BrowserRouter,Routes, Route } from "react-router"
 import Login from './Components/Forms/LoginForm.tsx';
+import Signup from './Components/Forms/SignupForm.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
@@ -16,9 +17,10 @@ createRoot(document.getElementById('root')!).render(
         <Route index path="/" element={<App />} />
         <Route path="*" element={<div>404 Page Not Found</div>} />
         <Route path='login/' element={<Login />} />
+        <Route path="signup/" element={<Signup />} />
       </Routes>
   </BrowserRouter>
     </NextUIProvider>
     </Provider>,
-  </StrictMode>,
+  </StrictMode>, 
 )
