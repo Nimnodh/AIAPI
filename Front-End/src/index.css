@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-hover-button {
+    &:hover {
+      background-color: transparent !important; 
+      border-color: transparent !important; 
+      box-shadow: none !important; 
+    }
+  }

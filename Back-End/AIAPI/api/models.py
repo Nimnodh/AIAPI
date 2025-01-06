@@ -11,6 +11,3 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
-class UploadedImage(models.Model):
-    image = models.ImageField(upload_to='images/')
-    created_at = models.DateTimeField(auto_now_add=True)

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import UserProfile, UploadedImage
+from .models import UserProfile
 from django.contrib.auth.models import User
 import re
 
@@ -77,7 +77,3 @@ class ChangePasswordSerializer(serializers.Serializer):
         if not user.check_password(value):
             raise serializers.ValidationError("Old password is incorrect.")
         return value
-class UploadedImageSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UploadedImage
-        fields = '__all__'
