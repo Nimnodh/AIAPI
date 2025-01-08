@@ -75,7 +75,7 @@ function App() {
         <p>Some contents...</p>
         <p>Some contents...</p>
       </Drawer>
-    <Content className="bg-white text-black p-6"><TextToImageComponent /></Content>
+    <Content className="bg-gray-100 text-black p-6"><TextToImageComponent /></Content>
     </Layout>
     
     
