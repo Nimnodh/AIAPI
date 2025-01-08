@@ -9,8 +9,8 @@ const paragraphVariants = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 0.5,
-      staggerChildren: 0.08,
+      delay: 0.2,
+      staggerChildren: 0.05,
     },
   },
 };

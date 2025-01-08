@@ -64,7 +64,7 @@ export default function Login() {
         transition={{ type: "spring", stiffness: 50 }}
       >
         {isLargeScreen ? (
-          <Row className="flex justify-center justify-items-center items-center h-screen mx-56">
+          <Row className="flex justify-center justify-items-center items-center">
             <div className="flex justify-center   ">
               <Col span={12} className="w-9/12 ">
                 <div className="h-[400px] opacity-45">
@@ -166,7 +166,7 @@ export default function Login() {
             </div>
           </Row>
         ) : (
-          <div className="flex justify-center justify-items-center items-center h-screen ">
+          <div className="flex justify-center justify-items-center items-center  ">
             <Form
             disabled={loading}
               name="basic"
